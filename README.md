@@ -20,33 +20,13 @@ Supported filename patterns include:
 - `YYYYMMDDTHHMMSSZ_FAILED_<serial>.txt`
 - `PASSED_<serial>.txt` / `FAILED_<serial>.txt` (falls back to file modified time for latest ordering)
 
-## Run from terminal
+## Run
 
 ```bash
 python3 app.py --results-dir ./sample_data
 ```
 
 Press `Esc` to exit.
-
-## Run from a desktop icon (recommended)
-
-Install a clickable launcher icon and app entry:
-
-```bash
-./scripts/install_desktop_icon.sh
-```
-
-This creates:
-
-- `~/Desktop/jiraqr.desktop`
-- `~/.local/share/applications/jiraqr.desktop`
-
-Then launch **JiraQR QC Scanner** from desktop/menu. If your desktop asks, trust/allow launching for the icon.
-
-The launcher uses `scripts/run_jiraqr.sh`, which supports optional env vars:
-
-- `JIRAQR_RESULTS_DIR` (default: `./sample_data`)
-- `JIRAQR_PASS_DURATION_MS` (default: `1000`)
 
 ## Tests
 
