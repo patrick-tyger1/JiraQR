@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=JiraQR QC Scanner
+Comment=Launch the JiraQR QC scanner kiosk
+Exec=/bin/bash -lc 'cd /workspace/JiraQR && ./scripts/run_jiraqr.sh'
+Path=/workspace/JiraQR
+Terminal=false
+Categories=Utility;
+StartupNotify=false
